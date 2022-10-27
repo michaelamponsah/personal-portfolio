@@ -97,11 +97,16 @@ img {
 .socials {
   margin: 1em 0;
 }
-
+.social-icon{
+  width: 19px;
+}
 .socials ul {
   display: flex;
+  align-items: flex-end;
 }
-
+.socials ul li{
+  margin-right: 0.8em;
+}
 .socials ul a {
   text-decoration: none;
 }
