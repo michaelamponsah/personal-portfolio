@@ -1,3 +1,7 @@
+:root{
+  --font-family-primary: font-family: 'Poppins', sans-serif;
+}
+
 /* Basic resets */
 *,
 *:before,
@@ -73,3 +77,13 @@ img {
   color: #7F8CFF;
 }
 
+.socials{
+  margin: 1.2em 0;
+}
+.socials ul {
+  display: flex;
+}
+
+.socials ul a {
+  text-decoration: none;
+}
