@@ -4,8 +4,8 @@
 
 /* Basic resets */
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -41,19 +41,22 @@ img {
   padding: 1.5em 0;
 }
 
-.toolbar>ul:first-child a {
+.toolbar ul a {
+  text-decoration: none;
+}
+
+.socials ul a {
+  text-decoration: none;
+}
+
+.toolbar > ul:first-child a {
   text-transform: capitalize;
   font-family: var(--font-family-primary);
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #6070FF;
+  color: #6070ff;
 }
-
-.toolbar ul a {
-  text-decoration: none;
-}
-
 
 /* Utilities */
 .container {
@@ -78,7 +81,7 @@ img {
   line-height: 52px;
   font-weight: 700;
   font-family: var(--font-family-primary);
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .headline p {
@@ -97,7 +100,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .socials {
@@ -115,8 +118,4 @@ img {
 
 .socials ul li {
   margin-right: 0.8em;
-}
-
-.socials ul a {
-  text-decoration: none;
 }
