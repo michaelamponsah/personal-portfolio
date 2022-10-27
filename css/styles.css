@@ -29,3 +29,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Styling for toolbar */
+.toolbar ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 0;
+}
+
+.toolbar ul a {
+  text-decoration: none;
+}
+
+
