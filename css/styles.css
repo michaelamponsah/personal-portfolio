@@ -1,5 +1,5 @@
-:root{
-  --font-family-primary: font-family: 'Poppins', sans-serif;
+:root {
+  --font-family-primary: 'Poppins', sans-serif;
 }
 
 /* Basic resets */
@@ -41,6 +41,15 @@ img {
   padding: 1.5em 0;
 }
 
+.toolbar>ul:first-child a {
+  text-transform: capitalize;
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070FF;
+}
+
 .toolbar ul a {
   text-decoration: none;
 }
@@ -52,34 +61,37 @@ img {
 }
 
 .headline h1 {
-  width: 40%;
+  width: 60%;
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
-  font-family: "Poppins";
+  font-family: var(--font-family-primary);
   color: #172B4D;
 }
 
 .headline p {
-  font-family: 'Poppins';
+  font-family: var(--font-family-primary);
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  padding: 0.8em 0;
 }
 
 .headline span {
   display: block;
   text-transform: uppercase;
+  font-family: var(--font-family-primary);
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7F8CFF;
 }
 
-.socials{
-  margin: 1.2em 0;
+.socials {
+  margin: 1em 0;
 }
+
 .socials ul {
   display: flex;
 }
