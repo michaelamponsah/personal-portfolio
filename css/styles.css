@@ -55,6 +55,12 @@ img {
 }
 
 
+/* Utilities */
+.container {
+  width: 90%;
+  margin: 0.5rem auto;
+}
+
 /* Styling for headline section */
 .headline {
   background: url("../assets/images/header-shapes-mobile.png");
@@ -97,16 +103,20 @@ img {
 .socials {
   margin: 1em 0;
 }
-.social-icon{
+
+.social-icon {
   width: 19px;
 }
+
 .socials ul {
   display: flex;
   align-items: flex-end;
 }
-.socials ul li{
+
+.socials ul li {
   margin-right: 0.8em;
 }
+
 .socials ul a {
   text-decoration: none;
 }
