@@ -42,3 +42,33 @@ img {
 }
 
 
+/* Styling for headline section */
+.headline {
+  padding: 1em 0;
+}
+
+.headline h1 {
+  width: 40%;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: "Poppins";
+  color: #172B4D;
+}
+
+.headline p {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.headline span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7F8CFF;
+}
