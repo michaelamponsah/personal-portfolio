@@ -1,0 +1,121 @@
+:root {
+  --font-family-primary: 'Poppins', sans-serif;
+}
+
+/* Basic resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling for toolbar */
+.toolbar ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 0;
+}
+
+.toolbar ul a {
+  text-decoration: none;
+}
+
+.socials ul a {
+  text-decoration: none;
+}
+
+.toolbar > ul:first-child a {
+  text-transform: capitalize;
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+}
+
+/* Utilities */
+.container {
+  width: 90%;
+  margin: 0.5rem auto;
+}
+
+/* Styling for headline section */
+.headline {
+  background: url("../assets/images/header-shapes-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  height: 718px;
+  top: 0;
+}
+
+.headline h1 {
+  margin-top: 10rem;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: var(--font-family-primary);
+  color: #172b4d;
+}
+
+.headline p {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding: 0.8em 0;
+}
+
+.headline span {
+  display: block;
+  text-transform: uppercase;
+  font-family: var(--font-family-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.socials {
+  margin: 1em 0;
+}
+
+.social-icon {
+  width: 19px;
+}
+
+.socials ul {
+  display: flex;
+  align-items: flex-end;
+}
+
+.socials ul li {
+  margin-right: 0.8em;
+}
