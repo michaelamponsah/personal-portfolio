@@ -205,7 +205,7 @@ body {
   color: #7a869a;
 }
 
-.card-body >ul li:first-child {
+.card-body > ul li:first-child {
   color: #344563;
 }
 
