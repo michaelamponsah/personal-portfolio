@@ -41,7 +41,7 @@ body {
 /* Styling for toolbar */
 
 .toolbar {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .toolbar ul {
@@ -58,7 +58,7 @@ body {
   text-decoration: none;
 }
 
-.toolbar>ul:first-child a {
+.toolbar > ul:first-child a {
   text-transform: capitalize;
   font-family: var(--font-family-primary);
   font-weight: 700;
@@ -79,7 +79,7 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: #396df2;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
@@ -123,7 +123,7 @@ body {
   background-position: center;
   height: 718px;
   top: 0;
-  background-color: #ffffff;
+  background-color: #fff;
   border-bottom-left-radius: 5rem;
   margin-bottom: 3em;
 }
@@ -174,9 +174,9 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 16px;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
@@ -205,6 +205,21 @@ body {
   color: #7a869a;
 }
 
+.card-footer ul li {
+  padding: 4px 12px;
+  height: 24px;
+  width: auto;
+  background-color: #ebebff;
+  border-radius: 8px;
+}
+
+.about-myself > div > ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em .5em;
+}
+
 .card-body > ul li:first-child {
   color: #344563;
 }
@@ -217,17 +232,9 @@ body {
   color: #344563;
 }
 
-.card-footer ul li {
-  padding: 4px 12px;
-  height: 24px;
-  width: auto;
-  background-color: #ebebff;
-  border-radius: 8px;
-}
-
 /* About myself section */
 .about-myself {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 2em 0;
   margin-top: 5rem;
 }
@@ -238,7 +245,7 @@ body {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  margin-bottom: .6em;
+  margin-bottom: 0.6em;
 }
 
 .about-myself .body {
@@ -256,9 +263,4 @@ body {
   font-family: var(--font-family-primary);
 }
 
-.about-myself > div > ul li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em .5em;
-}
+
