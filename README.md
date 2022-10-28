@@ -16,10 +16,21 @@
 **To get a local copy up and running follow these simple example steps.**
 
 
-
 ### Prerequisites
-Clone this repository and open it in your favourite text editor.
+*You should have git and npm installed on your computer.
 
+###Setup
+*Open your terminal
+*Run git clone https://github.com/michaelamponsah/personal-portfolio.git to clone this repository
+*Cd into the project folder
+
+
+#### Install
+*Run npm install to install the required linters
+
+### Tests
+*Open the index.html file in your favourite brower.
+*Use the developer tools to inspect the mobile version of the website.
 
 ## Authors
 
