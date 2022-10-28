@@ -85,8 +85,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 124px;
+  width: auto;
   height: 48px;
+  padding: 0 1em;
 }
 
 .dot {
@@ -97,6 +98,21 @@ body {
   background-color: #c1c7d0;
   border-radius: 100%;
   margin: 0 0.5em;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.lets-connect {
+  display: block;
+  text-transform: uppercase;
+  font-family: var(--font-family-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
 }
 
 /* Styling for headline section */
@@ -130,16 +146,6 @@ body {
   padding: 0.8em 0;
 }
 
-.headline span {
-  display: block;
-  text-transform: uppercase;
-  font-family: var(--font-family-primary);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-}
-
 .socials {
   margin: 1em 0;
 }
@@ -165,7 +171,7 @@ body {
   grid-row-gap: 2.5em;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -182,13 +188,15 @@ body {
   color: #172b4d;
 }
 
-.card-body ul, .card-footer ul {
+.card-body ul,
+.card-footer ul {
   display: flex;
   align-items: flex-end;
   margin: 1.2em 0;
 }
 
-.card-body ul > li, .card-footer ul > li {
+.card-body ul > li,
+.card-footer ul > li {
   margin-right: 0.6em;
   font-size: 13px;
   font-weight: 600;
@@ -197,7 +205,7 @@ body {
   color: #7a869a;
 }
 
-.card-body > ul li:first-child {
+.card-body >ul li:first-child {
   color: #344563;
 }
 
@@ -215,4 +223,42 @@ body {
   width: auto;
   background-color: #ebebff;
   border-radius: 8px;
+}
+
+/* About myself section */
+.about-myself {
+  background-color: #ffffff;
+  padding: 2em 0;
+  margin-top: 5rem;
+}
+
+.about-myself .title {
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin-bottom: .6em;
+}
+
+.about-myself .body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: var(--font-family-primary);
+  color: #344563;
+}
+
+.about-myself > div > ul {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: var(--font-family-primary);
+}
+
+.about-myself > div > ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em .5em;
 }
