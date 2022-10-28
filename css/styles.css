@@ -38,8 +38,8 @@ body {
   background-color: #e5e5e5;
 }
 
-
 /* Styling for toolbar */
+
 .toolbar {
   background-color: #ffffff;
 }
@@ -70,7 +70,7 @@ body {
 /* Utilities */
 .container {
   width: 90%;
-  margin: 0.3rem auto;
+  margin: 0 auto;
 }
 
 .btn-outline {
