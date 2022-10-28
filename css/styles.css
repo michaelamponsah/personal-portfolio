@@ -70,7 +70,7 @@ body {
 /* Utilities */
 .container {
   width: 90%;
-  margin: 0.5rem auto;
+  margin: 0.3rem auto;
 }
 
 .btn-outline {
@@ -167,6 +167,7 @@ body {
   padding: 16px;
   border: 1px solid #DFE1E6;
   border-radius: 16px;
+  margin: 2.5em 0;
 }
 
 .card-header h3 {
@@ -192,7 +193,7 @@ body {
   color: #7a869a;
 }
 
-.card-body ul:first-child {
+.card-body > ul li:first-child {
   color: #344563;
 }
 
