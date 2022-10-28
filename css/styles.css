@@ -109,6 +109,7 @@ body {
   top: 0;
   background-color: #ffffff;
   border-bottom-left-radius: 5rem;
+  margin-bottom: 3em;
 }
 
 .headline h1 {
@@ -160,14 +161,17 @@ body {
 .works {
   display: grid;
   grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 2.5em;
 }
 
 .card{
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   padding: 16px;
   border: 1px solid #DFE1E6;
   border-radius: 16px;
-  margin: 2.5em 0;
 }
 
 .card-header h3 {
