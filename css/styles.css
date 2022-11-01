@@ -295,12 +295,20 @@ body {
   margin: 0 0 2em 0;
 }
 
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-section input,
 button,
 textarea {
-  display: block;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
+}
+
+.contact-section button {
+  width: 140px;
 }
 
 .contact-section input,
