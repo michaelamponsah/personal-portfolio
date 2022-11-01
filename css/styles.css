@@ -266,6 +266,10 @@ body {
 /* Styling for contact me section */
 
 .contact-section {
+  background: url("../assets/images/contact-form-shapes-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   padding: 1em 0;
   background-color: #6070ff; 
   border-top-left-radius: 5rem;
