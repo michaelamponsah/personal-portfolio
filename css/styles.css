@@ -282,7 +282,7 @@ body {
   color: #fff;
   text-align: center;
   font-family: var(--font-family-primary);
-  margin: 0.5em 0;
+  margin: 2em 0 0.25em 0;
 }
 
 .contact-section p{
@@ -292,7 +292,7 @@ body {
   line-height: 28px;
   text-align: center;
   font-family: var(--font-family-primary);
-  margin: 0.8em 0;
+  margin: 0 0 2em 0;
 }
 
 .contact-section input, button, textarea {
