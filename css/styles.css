@@ -267,7 +267,8 @@ body {
 
 .contact-section {
   padding: 1em 0;
-  background-color: #396df2;  
+  background-color: #6070ff; 
+  border-top-left-radius: 5rem;
 }
 
 .contact-section h2 {
@@ -287,5 +288,35 @@ body {
   line-height: 28px;
   text-align: center;
   font-family: var(--font-family-primary);
-  margin: 0.5em 0;
+  margin: 0.8em 0;
 }
+
+.contact-section input, button, textarea {
+  display: block;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
+
+.contact-section input, textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.contact-section input{
+  height: 48px;
+  color: #172b4d;
+}
+
+.contact-section textarea {
+  color: #b3bac5;
+  width: 100%;
+  height: 170px;
+}
+
+
+
