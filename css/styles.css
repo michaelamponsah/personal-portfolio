@@ -295,8 +295,10 @@ body {
   margin: 0 0 2em 0;
 }
 
-.contact-section input, 
-button, 
+.contact-section input,
+
+button,
+
 textarea {
   display: block;
   border: 1px solid #cfd8dc;
@@ -314,7 +316,7 @@ textarea {
   line-height: 20px;
 }
 
-.contact-section input{
+.contact-section input {
   height: 48px;
   color: #172b4d;
 }
