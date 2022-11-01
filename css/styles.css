@@ -262,3 +262,30 @@ body {
   line-height: 24px;
   font-family: var(--font-family-primary);
 }
+
+/* Styling for contact me section */
+
+.contact-section {
+  padding: 1em 0;
+  background-color: #396df2;  
+}
+
+.contact-section h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-family-primary);
+  margin: 0.5em 0;
+}
+
+.contact-section p{
+  color: #ebebff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  font-family: var(--font-family-primary);
+  margin: 0.5em 0;
+}
