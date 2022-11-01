@@ -295,18 +295,13 @@ body {
   margin: 0 0 2em 0;
 }
 
-.contact-section input,
-
-button,
-
-textarea {
+.contact-section input, button, textarea {
   display: block;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
 
-.contact-section input, 
-textarea {
+.contact-section input, textarea {
   width: 100%;
   margin-bottom: 1em;
   padding: 0.5em;
