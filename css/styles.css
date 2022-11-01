@@ -267,7 +267,7 @@ body {
 
 .contact-section {
   background: url("../assets/images/contact-form-shapes-mobile.png");
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
   padding: 1em 0;
