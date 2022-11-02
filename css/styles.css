@@ -198,7 +198,6 @@ button:hover {
 .socials ul {
   display: flex;
   align-items: flex-end;
-  /* margin-left: -0.1rem; */
 }
 
 .socials ul li {
@@ -385,11 +384,11 @@ textarea {
   }
 
   .toolbar .nav-links .nav-item {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #344563;
-  margin-left: 0.5em;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    margin-left: 0.5em;
   }
 
   .headline {
@@ -401,12 +400,9 @@ textarea {
     white-space: pre;
   }
 
-  .headline h1, .headline p {
+  .headline h1,
+  .headline p {
     width: 50%;
-  }
-
-  .headline .socials {
-    margin-left: 21%;
   }
 
   .card {
@@ -437,6 +433,10 @@ textarea {
     grid-column: 1 / 2;
   }
 
+  .headline .socials {
+    margin-left: 21%;
+  }
+
   .about-myself .languages {
     grid-column: 2;
     grid-row: 1 / 2;
@@ -455,5 +455,4 @@ textarea {
   .contact-section > .container {
     width: 55%;
   }
- 
 }
