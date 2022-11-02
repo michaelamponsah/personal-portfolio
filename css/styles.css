@@ -67,18 +67,14 @@ body {
   color: #6070ff;
 }
 
+.toolbar .nav-links {
+  display: none;
+}
+
 /* Utilities */
 .container {
   width: 90%;
   margin: 0 auto;
-}
-
-button:hover {
-  background: #6070ff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .btn {
@@ -96,6 +92,14 @@ button:hover {
   width: auto;
   height: 48px;
   padding: 0 1em;
+}
+
+.btn:hover {
+  background: #6070ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .btn-outline {
@@ -149,15 +153,17 @@ button:hover {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+  margin: 1em 0;
 }
 
 /* Styling for headline section */
 .headline {
-  background: url("../assets/images/header-shapes-mobile.png");
+  background-image: url("../assets/images/header-shapes-mobile.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   height: 718px;
+  width: 100%;
   top: 0;
   background-color: #fff;
   border-bottom-left-radius: 5rem;
@@ -216,7 +222,7 @@ button:hover {
   border-radius: 16px;
 }
 
-.card-header h3 {
+.card-body h3 {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -292,21 +298,29 @@ button:hover {
   color: #344563;
 }
 
-.about-myself > div > ul {
+.about-myself .languages {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   font-family: var(--font-family-primary);
 }
 
+.about-myself .social-icons {
+  margin: 1em 0;
+}
+
 /* Styling for contact me section */
 
 .contact-section {
+  background-color: #fff;
+}
+
+.section-wrapper {
   background: url("../assets/images/contact-form-shapes-mobile.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 1em 0;
+  padding: 0.5em 0 5em 0;
   background-color: #6070ff;
   border-top-left-radius: 5rem;
 }
@@ -337,7 +351,7 @@ button:hover {
 }
 
 .contact-section input,
-.btn,
+button,
 textarea {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -367,4 +381,128 @@ textarea {
   color: #b3bac5;
   width: 100%;
   height: 170px;
+}
+
+@media screen and (min-width: 768px) {
+  .toolbar .burger-icon {
+    display: none;
+  }
+
+  .toolbar .nav-links {
+    display: block;
+  }
+
+  .toolbar .nav-links .nav-item {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    margin-left: 0.5em;
+  }
+
+  .headline {
+    background-image: url("../assets//images/header-shapes-desktop.png");
+  }
+
+  .headline .line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+
+  .headline h1,
+  .headline p {
+    width: 50%;
+  }
+
+  .headline h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .headline p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 1em;
+    padding-right: 1em;
+  }
+
+  .card .card-header {
+    width: 544px;
+    height: 448px;
+  }
+
+  .card .card-details {
+    padding: 0 2em;
+  }
+
+  .card-body h3 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .card-body ul > li {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card-body p {
+    font-size: 16px;
+  }
+
+  .card:nth-child(even) .card-details {
+    order: -1;
+  }
+
+  .about-myself .title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .about-myself .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    grid-column-gap: 46px;
+  }
+
+  .about-myself .content > .title,
+  .body,
+  .socials,
+  .btn {
+    grid-column: 1 / 2;
+  }
+
+  .headline .socials {
+    margin-left: 21%;
+  }
+
+  .about-myself .languages {
+    grid-column: 2;
+    grid-row: 1 / 2;
+  }
+
+  .about-myself .socials {
+    margin-top: -2em;
+  }
+
+  .about-myself .btn {
+    max-width: max-content;
+    margin-left: -0.4em;
+  }
+
+  .contact-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-wrapper .form-wrapper {
+    width: 55%;
+  }
 }
