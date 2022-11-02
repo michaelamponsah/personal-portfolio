@@ -153,11 +153,12 @@ button:hover {
 
 /* Styling for headline section */
 .headline {
-  background: url("../assets/images/header-shapes-mobile.png");
+  background-image: url("../assets/images/header-shapes-mobile.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   height: 718px;
+  width: 100%;
   top: 0;
   background-color: #fff;
   border-bottom-left-radius: 5rem;
@@ -369,4 +370,23 @@ textarea {
   height: 170px;
 }
 
+@media screen and (min-width: 768px) {
+  .headline {
+    background-image: url("../assets//images/header-shapes-desktop.png");
+  }
 
+  .headline .line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+
+  .headline h1, .headline p {
+    width: 50%;
+  }
+
+  .headline .socials {
+    margin-left: 21%;
+  }
+ 
+ 
+}
