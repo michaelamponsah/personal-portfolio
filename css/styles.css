@@ -217,7 +217,7 @@ button:hover {
   border-radius: 16px;
 }
 
-.card-header h3 {
+.card-body h3 {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -387,6 +387,19 @@ textarea {
   .headline .socials {
     margin-left: 21%;
   }
- 
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 245px 245px;
+    grid-column-gap: 46px;
+    grid-row-gap: 10px;
+  }
+
+  .card-footer {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-top: -2.5rem;
+  }
  
 }
