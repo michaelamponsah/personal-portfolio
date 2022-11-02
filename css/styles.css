@@ -153,6 +153,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+  margin: 1em 0;
 }
 
 /* Styling for headline section */
@@ -409,6 +410,16 @@ textarea {
     width: 50%;
   }
 
+  .headline h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .headline p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
   .card {
     flex-direction: row;
     justify-content: space-between;
@@ -426,8 +437,27 @@ textarea {
     padding: 0 2em;
   }
 
+  .card-body h3 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .card-body ul > li {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card-body p {
+    font-size: 16px;
+  }
+
   .card:nth-child(even) .card-details {
     order: -1;
+  }
+
+  .about-myself .title {
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .about-myself .content {
