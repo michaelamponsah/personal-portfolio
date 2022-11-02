@@ -67,6 +67,10 @@ body {
   color: #6070ff;
 }
 
+.toolbar .nav-links {
+  display: none;
+}
+
 /* Utilities */
 .container {
   width: 90%;
@@ -372,6 +376,22 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+  .toolbar .burger-icon {
+    display: none;
+  }
+
+  .toolbar .nav-links {
+    display: block;
+  }
+
+  .toolbar .nav-links .nav-item {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  margin-left: 0.5em;
+  }
+
   .headline {
     background-image: url("../assets//images/header-shapes-desktop.png");
   }
