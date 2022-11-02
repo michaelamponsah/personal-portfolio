@@ -425,5 +425,20 @@ textarea {
   .about-myself .btn {
     max-width: max-content;
   }
+
+  .contact-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* .contact-section > .container > .heading,
+  .tagline,
+  .form {
+    width: 50%;
+  } */
+
+  .contact-section > .container {
+    width: 55%;
+  }
  
 }
