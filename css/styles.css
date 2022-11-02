@@ -194,7 +194,7 @@ button:hover {
 .socials ul {
   display: flex;
   align-items: flex-end;
-  margin-left: -0.1rem;
+  /* margin-left: -0.1rem; */
 }
 
 .socials ul li {
@@ -429,13 +429,8 @@ textarea {
   .contact-section {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
-
-  /* .contact-section > .container > .heading,
-  .tagline,
-  .form {
-    width: 50%;
-  } */
 
   .contact-section > .container {
     width: 55%;
