@@ -90,6 +90,22 @@ body {
   padding: 0 1em;
 }
 
+
+.btn-enabled {
+  color: #6070ff;
+  border: 1px solid #7f8cff;
+}
+
+.btn-hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.btn-pressed {
+  background: #2230d2;
+  color: #fff;
+}
+
 .dot {
   display: inline-flex;
   align-items: center;
@@ -98,6 +114,11 @@ body {
   background-color: #c1c7d0;
   border-radius: 100%;
   margin: 0 0.5em;
+}
+
+.btn-disabled {
+  color: #5e6c84;
+  background-color: #e5e5e5;
 }
 
 .icon {
