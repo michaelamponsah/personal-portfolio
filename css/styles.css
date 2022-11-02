@@ -194,6 +194,7 @@ button:hover {
 .socials ul {
   display: flex;
   align-items: flex-end;
+  margin-left: -0.1rem;
 }
 
 .socials ul li {
@@ -400,6 +401,29 @@ textarea {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     margin-top: -2.5rem;
+  }
+
+  .about-myself .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    grid-column-gap: 46px;
+  }
+
+  .about-myself .content > .title,
+  .body,
+  .socials,
+  .btn {
+    grid-column: 1 / 2;
+  }
+
+  .about-myself .languages {
+    grid-column: 2;
+    grid-row: 1 / 2;
+  }
+
+  .about-myself .btn {
+    max-width: max-content;
   }
  
 }
