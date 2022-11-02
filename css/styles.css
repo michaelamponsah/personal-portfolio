@@ -455,6 +455,7 @@ textarea {
 
   .about-myself .btn {
     max-width: max-content;
+    margin-left: -0.4em;
   }
 
   .contact-section .container {
