@@ -78,7 +78,7 @@ button:hover {
   color: #fff;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .btn {
@@ -102,7 +102,6 @@ button:hover {
   color: #396df2;
   background: #fff;
 }
-
 
 .btn-enabled {
   background-color: #e5e5e5;
@@ -338,7 +337,7 @@ button:hover {
 }
 
 .contact-section input,
-button,
+.btn,
 textarea {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
