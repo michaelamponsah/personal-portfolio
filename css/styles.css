@@ -298,11 +298,15 @@ body {
   color: #344563;
 }
 
-.about-myself > div > ul {
+.about-myself .languages {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   font-family: var(--font-family-primary);
+}
+
+.about-myself .social-icons {
+  margin: 1em 0;
 }
 
 /* Styling for contact me section */
@@ -481,6 +485,10 @@ textarea {
   .about-myself .languages {
     grid-column: 2;
     grid-row: 1 / 2;
+  }
+
+  .about-myself .socials {
+    margin-top: -2em;
   }
 
   .about-myself .btn {
