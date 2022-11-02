@@ -73,7 +73,7 @@ body {
   margin: 0 auto;
 }
 
-.btn-outline {
+.btn {
   font-family: var(--font-family-primary);
   font-weight: 500;
   font-size: 17px;
@@ -90,8 +90,14 @@ body {
   padding: 0 1em;
 }
 
+.btn-outline {
+  color: #396df2;
+  background: #fff;
+}
+
 
 .btn-enabled {
+  background-color: #e5e5e5;
   color: #6070ff;
   border: 1px solid #7f8cff;
 }
