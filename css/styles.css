@@ -437,6 +437,16 @@ textarea {
     height: 448px;
   }
 
+  .card-header img {
+    transform: scale(0.85);
+    transition: transform, 10ms, ease-in, 250ms;
+  }
+
+  .card-header img:hover {
+    cursor: pointer;
+    transform: scale(1);
+  }
+
   .card .card-details {
     padding: 0 2em;
   }
