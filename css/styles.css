@@ -92,6 +92,7 @@ body {
   width: auto;
   height: 48px;
   padding: 0 1em;
+  transition: background, 2ms, ease-in, 100ms;
 }
 
 .btn:hover {
@@ -105,6 +106,7 @@ body {
 .btn-outline {
   color: #396df2;
   background: #fff;
+  transition: background, 2ms, ease-in, 1000ms;
 }
 
 .btn-enabled {
