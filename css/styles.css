@@ -428,13 +428,13 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    align-items: center;
     padding-top: 1em;
     padding-right: 1em;
   }
 
   .card .card-header {
     width: 544px;
-    height: 448px;
   }
 
   .card .card-details {
