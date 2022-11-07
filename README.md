@@ -10,6 +10,9 @@
 - HTML & CSS
 
 
+# Live Demo
+- Visit (https://michaelamponsah.github.io/personal-portfolio/) to view a live verision of this site.
+
 
 ## Getting Started
 
