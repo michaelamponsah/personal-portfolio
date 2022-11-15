@@ -58,7 +58,7 @@ body {
   text-decoration: none;
 }
 
-.toolbar > ul:first-child a {
+.toolbar>ul:first-child a {
   text-transform: capitalize;
   font-family: var(--font-family-primary);
   font-weight: 700;
@@ -85,7 +85,13 @@ body {
   backdrop-filter: blur(7px);
   width: 100%;
   height: 100vh;
-} 
+  transform: translateX(100%);
+}
+
+.mobile-nav-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out 300ms;
+}
 
 .mobile-navigation .close-icon-wrapper {
   display: flex;
@@ -102,7 +108,7 @@ body {
   line-height: 44px;
 }
 
-.mobile-navigation ul:last-child > li a {
+.mobile-navigation ul:last-child>li a {
   color: #fff;
 }
 
@@ -274,8 +280,8 @@ body {
   margin: 1.2em 0;
 }
 
-.card-body ul > li,
-.card-footer ul > li {
+.card-body ul>li,
+.card-footer ul>li {
   margin-right: 0.6em;
   font-size: 13px;
   font-weight: 600;
@@ -292,14 +298,14 @@ body {
   border-radius: 8px;
 }
 
-.about-myself > div > ul li {
+.about-myself>div>ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em 0.5em;
 }
 
-.card-body > ul li:first-child {
+.card-body>ul li:first-child {
   color: #344563;
 }
 
@@ -493,7 +499,7 @@ textarea {
     line-height: 52px;
   }
 
-  .card-body ul > li {
+  .card-body ul>li {
     font-size: 18px;
     line-height: 24px;
   }
@@ -518,7 +524,7 @@ textarea {
     grid-column-gap: 46px;
   }
 
-  .about-myself .content > .title,
+  .about-myself .content>.title,
   .body,
   .socials,
   .btn {
