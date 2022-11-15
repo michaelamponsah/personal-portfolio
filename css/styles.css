@@ -71,6 +71,34 @@ body {
   display: none;
 }
 
+/* Mobile nav slider */
+.mobile-navigation {
+  padding-top: 1.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 1em;
+  background-color: #6070FF;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(7px);
+  width: 100%;
+  height: 100vh;
+} 
+
+.mobile-navigation ul {
+  flex-direction: column;
+}
+
+.mobile-navigation ul li {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.mobile-navigation ul:last-child > li a {
+  color: #fff;
+}
+
 /* Utilities */
 .container {
   width: 90%;
