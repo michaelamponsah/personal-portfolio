@@ -83,8 +83,7 @@ body {
   top: 0;
   left: 0;
   padding-left: 1em;
-  display: flex;
-  flex-direction: column;
+  display: none;
   background-color: #6070ff;
   mix-blend-mode: multiply;
   backdrop-filter: blur(7px);
@@ -94,6 +93,8 @@ body {
 }
 
 .mobile-nav-active {
+  display: flex;
+  flex-direction: column;
   transform: translateX(0);
   transition: transform 300ms ease-in-out 300ms;
 }
