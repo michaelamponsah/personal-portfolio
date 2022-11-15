@@ -432,6 +432,10 @@ textarea {
     display: none;
   }
 
+  .mobile-navigation {
+    display: none;
+  }
+
   .toolbar .nav-links {
     display: block;
   }
