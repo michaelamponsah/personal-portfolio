@@ -9,11 +9,11 @@ document.addEventListener('click', (e) => {
     navMenu.classList.toggle('mobile-nav-active');
   }
 
-  if(isNavLink && navMenu.classList.contains('mobile-nav-active')) {
+  if (isNavLink && navMenu.classList.contains('mobile-nav-active')) {
     navMenu.classList.remove('mobile-nav-active');
     body.style.overflow = 'auto';
   }
-  
+
   if (navMenu.classList.contains('mobile-nav-active')) {
     body.style.overflow = 'hidden';
   } else {
