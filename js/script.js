@@ -10,9 +10,8 @@ document.addEventListener('click', (e) => {
   }
 
   if(isNavLink && navMenu.classList.contains('mobile-nav-active')) {
-    console.log('hi')
-    navMenu.classList.remove('mobile-nav-active')
-    body.style.overflow = 'auto'
+    navMenu.classList.remove('mobile-nav-active');
+    body.style.overflow = 'auto';
   }
   
   if (navMenu.classList.contains('mobile-nav-active')) {
