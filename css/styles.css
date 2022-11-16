@@ -437,6 +437,15 @@ textarea {
   background-color: #fff;
   padding: 16px;
   border-radius: 16px;
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  z-index: 10;
+  display: none;
+}
+
+.modal-display-block {
+  display: block;
 }
 
 .modal--header .top {
