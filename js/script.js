@@ -5,6 +5,12 @@ const navMenu = document.querySelector('.mobile-navigation');
 const body = document.querySelector('body');
 const worksSection = document.querySelector('.works');
 
+let card;
+worksCardData.forEach(cardItem => {
+   card = cardBuilder(cardItem);
+})
+worksSection.insertAdjacentElement('afterbegin', card)
+
 document.addEventListener('click', (e) => {
   const isNavIcon = e.target.matches('[data-nav-menu-icon]');
   const isNavLink = e.target.matches('[data-nav-link]');
