@@ -441,11 +441,12 @@ textarea {
   top: 10%;
   left: 5%;
   z-index: 10;
-  display: none;
+  transform: scale(0);
 }
 
-.modal-display-block {
-  display: block;
+.modal-active {
+  transform: scale(1);
+  transition: transform 300ms ease-in 300ms;
 }
 
 .modal--header .top {
