@@ -1,5 +1,5 @@
-import cardBuilder from "./cardBuilder";
-import worksCardData from "./worksCardData";
+import cardBuilder from "./cardBuilder.js";
+import worksCardData from "./worksCardData.js";
 
 const navMenu = document.querySelector('.mobile-navigation');
 const body = document.querySelector('body');
@@ -24,4 +24,3 @@ document.addEventListener('click', (e) => {
     body.style.overflow = 'auto';
   }
 });
-
