@@ -1,10 +1,12 @@
 export default cardBuilder = (cardData) => {
-  const { imageSource, title, description } = cardData
+  const { id, image, title, description } = cardData
+  const { src, alt } = image
+  
   const card = `
  <div class="card" tabindex="0">
  <div class="card-header">
-   <img src="${imageSource}"
-     alt="Snapshoot of the homepage of the multi post stories project">
+   <img src="${src}"
+     alt="${alt}">
  </div>
  <div class="card-details">
    <div class="card-body">
