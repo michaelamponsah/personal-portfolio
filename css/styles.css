@@ -516,6 +516,7 @@ textarea {
 
 .modal--buttons-techs-wrapper :nth-child(2) > button {
   margin-right: 1.5em;
+  margin-bottom: 1em;
   padding: 1.3em;
 }
 
