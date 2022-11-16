@@ -1,5 +1,9 @@
+import cardBuilder from "./cardBuilder";
+import worksCardData from "./worksCardData";
+
 const navMenu = document.querySelector('.mobile-navigation');
 const body = document.querySelector('body');
+const worksSection = document.querySelector('.works');
 
 document.addEventListener('click', (e) => {
   const isNavIcon = e.target.matches('[data-nav-menu-icon]');
@@ -20,3 +24,4 @@ document.addEventListener('click', (e) => {
     body.style.overflow = 'auto';
   }
 });
+
