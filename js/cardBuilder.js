@@ -24,7 +24,7 @@ const cardBuilder = (cardData) => {
        <li>css</li>
        <li>javascript</li>
      </ul>
-     <button class="btn btn-outline">See Project</button>
+     <button class="btn btn-outline" data-open-modal>See Project</button>
    </div>
  </div>
 </div>
