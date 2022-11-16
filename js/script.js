@@ -4,6 +4,8 @@ import worksCardData from "./worksCardData.js";
 const navMenu = document.querySelector('.mobile-navigation');
 const body = document.querySelector('body');
 const worksSection = document.querySelector('.works');
+const modal = document.querySelector('.modal')
+// const modalCloseButton = document.querySelector('[data-modal-close]')
 
 worksCardData.forEach(cardItem => {
    worksSection.insertAdjacentHTML('afterbegin', cardBuilder(cardItem))
@@ -12,6 +14,17 @@ worksCardData.forEach(cardItem => {
 document.addEventListener('click', (e) => {
   const isNavIcon = e.target.matches('[data-nav-menu-icon]');
   const isNavLink = e.target.matches('[data-nav-link]');
+
+  const isModalOpenButton = e.target.matches('[data-modal-target]');
+  const isModalCloseButton = e.target.matches('[data-modal-close]');
+
+if(isModalOpenButton) {
+  modal.classList.add('modal-active');
+}
+
+if(isModalCloseButton) {
+  modal.classList.remove('modal-active');
+}
 
   if (isNavIcon) {
     navMenu.classList.toggle('mobile-nav-active');
@@ -27,4 +40,6 @@ document.addEventListener('click', (e) => {
   } else {
     body.style.overflow = 'auto';
   }
+
+  
 });
