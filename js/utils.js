@@ -18,4 +18,4 @@ export const setModalDisplayData = (displayData) => {
   document.querySelector('.modal--image').src = image.src;
   document.querySelector('.modal--image').alt = image.alt;
   document.querySelector('.modal--description').innerText = description;
-}
+};

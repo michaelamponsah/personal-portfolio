@@ -1,11 +1,11 @@
-const cardBuilder = (cardData) => {
+const cardBuilder = (cardData) =>{
 
   const { 
-    id, 
+    id,
     image, 
-    title, 
-    description, 
-    technologies 
+    title,
+    description,
+    technologies, 
   } = cardData;
   const { src, alt } = image;
 
@@ -33,8 +33,8 @@ const cardBuilder = (cardData) => {
    </div>
  </div>
 </div>
- `
+ `;
   return card;
-}
+};
 
 export default cardBuilder;
