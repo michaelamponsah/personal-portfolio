@@ -1,6 +1,12 @@
 const cardBuilder = (cardData) => {
 
-  const { id, image, title, description, technologies } = cardData;
+  const { 
+    id, 
+    image, 
+    title, 
+    description, 
+    technologies 
+  } = cardData;
   const { src, alt } = image;
 
   const card = `

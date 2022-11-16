@@ -8,9 +8,9 @@ const worksSection = document.querySelector('.works');
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 
-worksCardData.forEach(cardItem => {
+worksCardData.forEach((cardItem) => {
   worksSection.insertAdjacentHTML('afterbegin', cardBuilder(cardItem));
-})
+});
 
 document.addEventListener('click', (e) => {
   const isNavIcon = e.target.matches('[data-nav-menu-icon]');
@@ -24,12 +24,12 @@ document.addEventListener('click', (e) => {
     modal.classList.add('modal-active');
     overlay.classList.add('overlay-active');
 
-    const cardData = e.target.closest('.card')
+    const cardData = e.target.closest('.card');
     const modalDisplayData = getCardData(cardData);
     setModalDisplayData(modalDisplayData, modal);
   }
 
-  if(isOverlay && modal.classList.contains('modal-active')){
+  if (isOverlay && modal.classList.contains('modal-active')) {
     modal.classList.remove('modal-active');
     overlay.classList.remove('overlay-active');
   }
@@ -54,4 +54,3 @@ document.addEventListener('click', (e) => {
     body.style.overflow = 'auto';
   }
 });
-
