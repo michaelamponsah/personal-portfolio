@@ -519,6 +519,10 @@ textarea {
   padding: 1.3em;
 }
 
+.modal--buttons-techs-wrapper :nth-child(2) > button > img {
+  margin-left: 0.8em;
+}
+
 @media screen and (min-width: 768px) {
   .toolbar .burger-icon {
     display: none;
