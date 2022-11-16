@@ -510,6 +510,15 @@ textarea {
   line-height: 16px;
 }
 
+.modal--buttons-techs-wrapper :nth-child(2) {
+  display: flex;
+}
+
+.modal--buttons-techs-wrapper :nth-child(2) > button {
+  margin-right: 1.5em;
+  padding: 1.3em;
+}
+
 @media screen and (min-width: 768px) {
   .toolbar .burger-icon {
     display: none;
