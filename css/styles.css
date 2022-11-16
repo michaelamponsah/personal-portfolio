@@ -457,7 +457,6 @@ textarea {
 
 .modal--header > ul {
   display: flex;
-  justify-content: space-evenly;
   margin: 0.8em 0;
   color: #2230d2;
 }
@@ -538,6 +537,11 @@ textarea {
 
 .modal--buttons-techs-wrapper :nth-child(2) > button > img {
   margin-left: 0.8em;
+}
+
+.modal--buttons-techs-wrapper :nth-child(2) > button > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .overlay {

@@ -6,7 +6,6 @@ const navMenu = document.querySelector('.mobile-navigation');
 const body = document.querySelector('body');
 const worksSection = document.querySelector('.works');
 const modal = document.querySelector('.modal')
-// const modalCloseButton = document.querySelector('[data-modal-close]')
 const overlay = document.querySelector('.overlay')
 
 worksCardData.forEach(cardItem => {

@@ -1,5 +1,5 @@
 const cardBuilder = (cardData) => {
-  const { id, image, title, description } = cardData
+  const { id, image, title, description, technologies } = cardData
   const { src, alt } = image
 
   const card = `
@@ -20,9 +20,9 @@ const cardBuilder = (cardData) => {
    </div>
    <div class="card-footer">
      <ul>
-       <li>html</li>
-       <li>css</li>
-       <li>javascript</li>
+      ${technologies.map(tech => {
+        return `<li>${tech}</li>`
+      })}
      </ul>
      <button class="btn btn-outline" data-modal-target = "#modal">See Project</button>
    </div>
