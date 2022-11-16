@@ -3,7 +3,7 @@ const cardBuilder = (cardData) => {
   const { src, alt } = image
 
   const card = `
- <div class="card" tabindex="0">
+ <div class="card" id=${id} tabindex="0">
  <div class="card-header">
    <img src="${src}"
      alt="${alt}">
