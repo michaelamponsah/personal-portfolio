@@ -699,4 +699,35 @@ textarea {
   .section-wrapper .form-wrapper {
     width: 55%;
   }
+
+  .modal {
+    top: 0%;
+    bottom: 5%;
+    width: 90%;
+    height: 100%;
+  }
+
+  .modal-active {
+    transform: scale(0.8);   
+  }
+
+  .modal--body {
+    width: 500px;
+    height: auto;
+    transform: scale(0.9);   
+
+    width: 554px;
+    height: 293px;
+  }
+
+  .modal--footer {
+    margin-top: 8em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .modal--footer > p {
+    margin-right: 0.8em;
+  }
 }
