@@ -152,6 +152,7 @@ body {
 
 .btn-outline {
   color: #396df2;
+  border: 1px solid #396df2;
   background: #fff;
   transition: background, 2ms, ease-in, 1000ms;
 }
