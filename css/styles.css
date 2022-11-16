@@ -446,7 +446,7 @@ textarea {
 
 .modal-active {
   transform: scale(1);
-  transition: transform 300ms ease-in 300ms;
+  transition: transform 250ms ease-in 250ms;
 }
 
 .modal--header .top {
@@ -555,7 +555,8 @@ textarea {
 
 .overlay-active {
   opacity: 1;
-  transition: opacity 300ms ease-in 300ms;
+  transition: opacity 250ms ease-in 250ms;
+  pointer-events: all;
 }
 
 @media screen and (min-width: 768px) {
