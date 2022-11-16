@@ -5,10 +5,11 @@ const navMenu = document.querySelector('.mobile-navigation');
 const body = document.querySelector('body');
 const worksSection = document.querySelector('.works');
 const modal = document.querySelector('.modal')
+const overlay = document.querySelector('.overlay')
 // const modalCloseButton = document.querySelector('[data-modal-close]')
 
 worksCardData.forEach(cardItem => {
-   worksSection.insertAdjacentHTML('afterbegin', cardBuilder(cardItem))
+  worksSection.insertAdjacentHTML('afterbegin', cardBuilder(cardItem))
 })
 
 document.addEventListener('click', (e) => {
@@ -18,13 +19,15 @@ document.addEventListener('click', (e) => {
   const isModalOpenButton = e.target.matches('[data-modal-target]');
   const isModalCloseButton = e.target.matches('[data-modal-close]');
 
-if(isModalOpenButton) {
-  modal.classList.add('modal-active');
-}
+  if (isModalOpenButton) {
+    modal.classList.add('modal-active');
+    overlay.classList.add('overlay-active');
+  }
 
-if(isModalCloseButton) {
-  modal.classList.remove('modal-active');
-}
+  if (isModalCloseButton) {
+    modal.classList.remove('modal-active');
+    overlay.classList.remove('overlay-active');
+  }
 
   if (isNavIcon) {
     navMenu.classList.toggle('mobile-nav-active');
@@ -41,5 +44,5 @@ if(isModalCloseButton) {
     body.style.overflow = 'auto';
   }
 
-  
+
 });
