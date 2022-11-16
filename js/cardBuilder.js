@@ -1,7 +1,7 @@
-export default cardBuilder = (cardData) => {
+const cardBuilder = (cardData) => {
   const { id, image, title, description } = cardData
   const { src, alt } = image
-  
+
   const card = `
  <div class="card" tabindex="0">
  <div class="card-header">
@@ -31,3 +31,5 @@ export default cardBuilder = (cardData) => {
  `
   return card;
 }
+
+export default cardBuilder;

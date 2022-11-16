@@ -1,4 +1,4 @@
-export default worksCardData = [
+const worksCardData = [
   {
     id: 'card-1',
     image: {
@@ -37,3 +37,5 @@ export default worksCardData = [
   },
 
 ]
+
+export default worksCardData;
