@@ -1,4 +1,4 @@
-import worksCardData from "./worksCardData.js"
+import worksCardData from './worksCardData.js';
 
 export const getCardData = (cardData) => {
   const cardId = cardData.getAttribute('id');
