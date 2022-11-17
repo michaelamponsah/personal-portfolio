@@ -141,7 +141,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
+  min-width: 150px;
   height: 48px;
   padding: 0 1em;
   transition: background, 2ms, ease-in, 100ms;
@@ -458,15 +458,14 @@ textarea {
   height: 170px;
 }
 
-.modal {
+.modal-content {
   background-color: #fff;
   padding: 16px;
   border-radius: 16px;
-  position: fixed;
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  z-index: 10;
+  margin: 0 auto;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 2;
   transform: scale(0);
 }
 
@@ -538,8 +537,7 @@ textarea {
   margin-right: 1em;
   margin-bottom: 1em;
   padding: 1.3em;
-  font-size: 0.7rem;
-  min-width: fit-content;
+  font-size: 1rem;
 }
 
 .modal--buttons-techs-wrapper :nth-child(2) > button img {
@@ -547,16 +545,21 @@ textarea {
 }
 
 .overlay {
-  background-color: #c1c7d0;
-  mix-blend-mode: multiply;
+  background-color: rgba(81, 82, 83, 0.8);
+  background-color: #f4f5f7;
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 5;
+  z-index: 1;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   opacity: 0;
   pointer-events: none;
+}
+
+.overlay::-webkit-scrollbar {
+  display: none;
 }
 
 .overlay-active {
@@ -707,19 +710,14 @@ textarea {
     width: 55%;
   }
 
-  .modal {
-    width: 90vw;
+  .modal-content {
+    width: 100vw;
     min-height: 100vh;
-    padding: 8em 5em;
+    padding: 6em 2.5em;
   }
 
   .modal-active {
-    transform: scale(0.9);
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    left: 10%;
-    margin-left: -40px;
+    transform: scale(1);
   }
 
   .modal--footer {
@@ -730,9 +728,13 @@ textarea {
   }
 
   .modal--footer > p {
-    margin-right: 2em;
+    margin-right: 5em;
     font-weight: 400;
     line-height: 30px;
     font-size: 16px;
+  }
+
+  .modal--buttons-techs-wrapper :nth-child(2) > button {
+    min-width: 160px;
   }
 }

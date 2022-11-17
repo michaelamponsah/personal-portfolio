@@ -5,8 +5,10 @@ const cardBuilder = (cardData) => {
     title,
     description,
     technologies,
+    sources,
   } = cardData;
   const { src, alt } = image;
+  const {seeLive, seeSource} = sources;
 
   const card = `
  <div class="card" id=${id} tabindex="0">
