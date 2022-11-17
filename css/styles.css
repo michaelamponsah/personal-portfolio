@@ -464,7 +464,9 @@ textarea {
   border-radius: 16px;
   margin: 0 auto;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 713px;
+  position: absolute;
+  top: 60px;
   z-index: 2;
   transform: scale(0);
 }
@@ -523,6 +525,7 @@ textarea {
 .modal--buttons-techs-wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 5em;
 }
 
 .modal--buttons-techs-wrapper > ul:first-child {
@@ -535,7 +538,11 @@ textarea {
   margin-right: 1em;
   margin-bottom: 1em;
   padding: 1.3em;
-  font-size: 1rem;
+  width: 156px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .modal--buttons-techs-wrapper :nth-child(2) > button img {
@@ -712,6 +719,9 @@ textarea {
     width: 100vw;
     min-height: 100vh;
     padding: 6em 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .modal-active {
