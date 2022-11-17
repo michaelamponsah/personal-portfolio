@@ -13,8 +13,8 @@ export const getCardData = (cardData) => {
 };
 
 export const setModalDisplayData = (displayData) => {
-  const { 
-    image, title, description, sources 
+  const {
+    image, title, description, sources,
   } = displayData;
   document.querySelector('.modal--title').innerText = title;
   document.querySelector('.modal--image').src = image.src;
