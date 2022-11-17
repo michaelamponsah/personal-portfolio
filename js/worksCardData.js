@@ -9,9 +9,9 @@ const worksCardData = [
     description: 'A daily selection of privately personalized reads: no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     sources: {
-      seeLive: 'https://michaelamponsah.github.io/personal-portfolio/', 
+      seeLive: 'https://michaelamponsah.github.io/personal-portfolio/',
       seeSource: 'https://github.com/michaelamponsah/personal-portfolio',
-    }
+    },
   },
   {
     id: 'card-2',
@@ -23,9 +23,9 @@ const worksCardData = [
     description: 'A daily selection of privately personalized reads: no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     sources: {
-      seeLive: 'https://michaelamponsah.github.io/personal-portfolio/', 
+      seeLive: 'https://michaelamponsah.github.io/personal-portfolio/',
       seeSource: 'https://github.com/michaelamponsah/personal-portfolio',
-    }
+    },
   },
   {
     id: 'card-3',
@@ -37,9 +37,9 @@ const worksCardData = [
     description: 'A daily selection of privately personalized reads: no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     sources: {
-      seeLive: 'https://michaelamponsah.github.io/personal-portfolio/', 
+      seeLive: 'https://michaelamponsah.github.io/personal-portfolio/',
       seeSource: 'https://github.com/michaelamponsah/personal-portfolio',
-    }
+    },
   },
   {
     id: 'card-4',
@@ -51,9 +51,9 @@ const worksCardData = [
     description: 'A daily selection of privately personalized reads: no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     sources: {
-      seeLive: 'https://michaelamponsah.github.io/personal-portfolio/', 
+      seeLive: 'https://michaelamponsah.github.io/personal-portfolio/',
       seeSource: 'https://github.com/michaelamponsah/personal-portfolio',
-    }
+    },
   },
 ];
 

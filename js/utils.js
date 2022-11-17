@@ -13,6 +13,7 @@ export const getCardData = (cardData) => {
 };
 
 export const setModalDisplayData = (displayData) => {
+
   const { image, title, description, sources } = displayData;
   document.querySelector('.modal--title').innerText = title;
   document.querySelector('.modal--image').src = image.src;
@@ -20,9 +21,10 @@ export const setModalDisplayData = (displayData) => {
   document.querySelector('.modal--description').innerText = description;
   document.querySelector('.modal--see-live').href = sources.seeLive;
   document.querySelector('.modal--see-source').href = sources.seeSource;
+
 };
 
 export const disableScrolling = () => {
   document.body.style.display = '100vh';
   document.body.style.overflowY = 'hidden';
-}
+};
