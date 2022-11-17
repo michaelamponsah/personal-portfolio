@@ -503,11 +503,9 @@ textarea {
 
 .modal--header > .top > :nth-child(2) {
   display: inline-block;
-  width: 25px;
-  height: 25px;
   outline: none;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 3rem;
   background-color: #fff;
   border: none;
   cursor: pointer;
