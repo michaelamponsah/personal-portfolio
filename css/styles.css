@@ -463,6 +463,7 @@ textarea {
   padding: 16px;
   border-radius: 16px;
   position: fixed;
+  position: absolute;
   top: 10%;
   left: 5%;
   z-index: 10;
@@ -470,7 +471,7 @@ textarea {
 }
 
 .modal-active {
-  transform: scale(1);
+  transform: scale(0.9);
   transition: transform 250ms ease-in 250ms;
 }
 
@@ -534,13 +535,15 @@ textarea {
 }
 
 .modal--buttons-techs-wrapper :nth-child(2) > button {
-  margin-right: 1.5em;
+  margin-right: 1em;
   margin-bottom: 1em;
   padding: 1.3em;
+  font-size: 0.7rem;
+  min-width: fit-content;
 }
 
-.modal--buttons-techs-wrapper :nth-child(2) > button > img {
-  margin-left: 0.8em;
+.modal--buttons-techs-wrapper :nth-child(2) > button img {
+  margin-left: 0.5em;
 }
 
 .overlay {
@@ -625,6 +628,11 @@ textarea {
     transition: transform, 10ms, ease-in, 250ms;
   }
 
+  .modal--body > img {
+    width: 100%;
+    height: auto;
+  }
+
   .card-header img:hover {
     cursor: pointer;
     transform: scale(1);
@@ -700,30 +708,31 @@ textarea {
   }
 
   .modal {
-    top: 0%;
-    bottom: 5%;
-    width: 90%;
-    height: 100%;
+    width: 90vw;
+    min-height: 100vh;
+    padding: 8em 5em;
   }
 
   .modal-active {
-    transform: scale(0.8);
-  }
-
-  .modal--body {
     transform: scale(0.9);
-    width: 554px;
-    height: 293px;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 10%;
+    margin-left: -40px;
   }
 
   .modal--footer {
-    margin-top: 8em;
+    margin-top: 2em;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
   }
 
   .modal--footer > p {
-    margin-right: 0.8em;
+    margin-right: 2em;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
   }
 }

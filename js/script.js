@@ -16,6 +16,7 @@ document.addEventListener('click', (e) => {
   const isNavIcon = e.target.matches('[data-nav-menu-icon]');
   const isNavLink = e.target.matches('[data-nav-link]');
   const isOverlay = e.target.matches('.overlay');
+  const scrollYPosition = document.documentElement.scrollTop;
 
   const isModalOpenButton = e.target.matches('[data-modal-target]');
   const isModalCloseButton = e.target.matches('[data-modal-close]');
@@ -27,6 +28,7 @@ document.addEventListener('click', (e) => {
     const cardData = e.target.closest('.card');
     const modalDisplayData = getCardData(cardData);
     setModalDisplayData(modalDisplayData, modal);
+    modal.style.top = `${scrollYPosition}px`;
   }
 
   if (isOverlay && modal.classList.contains('modal-active')) {
