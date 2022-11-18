@@ -78,12 +78,43 @@ function displayError() {
   emailError.className = 'error error-active';
 }
 
+let userData = {
+  userName: '',
+  userEmail: '',
+  userMessage: '',
+};
+
+fullName.addEventListener('input', () => {
+  if(fullName.validity.valid) {
+    userData = {
+      ...userData,
+      userName: fullName.value
+    };
+    storeDataInBrowser('userData', userData);
+  }
+});
+
 email.addEventListener('blur', () => {
   if (email.validity.valid) {
     emailError.textContent = '';
     emailError.className = 'error';
+    userData = {
+      ...userData,
+      userEmail: email.value,
+    };
+    storeDataInBrowser('userData', userData);
   } else {
     displayError();
+  }
+});
+
+message.addEventListener('input', () =>{
+  if(message.validity.valid) {
+    userData = {
+      ...userData,
+      userMessage: message.value,
+    };
+    storeDataInBrowser('userData', userData);
   }
 });
 
@@ -94,16 +125,7 @@ email.addEventListener('invalid', () => {
 getIntouchForm.addEventListener('submit', (e) => {
   if (!email.validity.valid) {
     displayError();
-    e.preventDefault();
   }
-
-  const userData = {
-    userName: fullName.value,
-    userEmail: email.value,
-    userMessage: message.value,
-  };
-
-  storeDataInBrowser('userData', userData);
 });
 
 const {
