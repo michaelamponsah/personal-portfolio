@@ -85,16 +85,16 @@ let userData = {
 };
 
 fullName.addEventListener('input', () => {
-  if(fullName.validity.valid) {
+  if (fullName.validity.valid) {
     userData = {
       ...userData,
-      userName: fullName.value
+      userName: fullName.value,
     };
     storeDataInBrowser('userData', userData);
   }
 });
 
-email.addEventListener('blur', () => {
+email.addEventListener('input', () => {
   if (email.validity.valid) {
     emailError.textContent = '';
     emailError.className = 'error';
@@ -108,8 +108,8 @@ email.addEventListener('blur', () => {
   }
 });
 
-message.addEventListener('input', () =>{
-  if(message.validity.valid) {
+message.addEventListener('input', () => {
+  if (message.validity.valid) {
     userData = {
       ...userData,
       userMessage: message.value,
@@ -122,7 +122,7 @@ email.addEventListener('invalid', () => {
   email.setCustomValidity(' ');
 });
 
-getIntouchForm.addEventListener('submit', (e) => {
+getIntouchForm.addEventListener('submit', () => {
   if (!email.validity.valid) {
     displayError();
   }
