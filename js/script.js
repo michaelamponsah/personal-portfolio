@@ -22,7 +22,7 @@ worksCardData.forEach((cardItem) => {
 function displayError() {
   if (email.validity.valueMissing) {
     emailError.textContent = 'Email is required please';
-    email.setCustomValidity('')
+    email.setCustomValidity('');
   } else if (email.validity.typeMismatch) {
     emailError.textContent = 'Please provide a valid email'
   }
