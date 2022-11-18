@@ -211,6 +211,23 @@ body {
   margin: 1em 0;
 }
 
+.error {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1em 0;
+  background-color: #fdd;
+  padding: 1em;
+  border-radius: 2px;
+  display: none;
+  text-align: center;
+  font-family: var(--font-family-primary);
+}
+
+.error-active {
+  display: block;
+  color: #ed4337;
+}
+
 /* Styling for headline section */
 .headline {
   background-image: url("../assets/images/header-shapes-mobile.png");

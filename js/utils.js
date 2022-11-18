@@ -26,5 +26,5 @@ export const setModalDisplayData = (displayData) => {
 
 export const disableScrolling = () => {
   document.body.style.display = '100vh';
-  document.body.style.overflowY = 'hidden';
+  document.body.style.overflow = 'hidden';
 };

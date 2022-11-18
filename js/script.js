@@ -7,9 +7,44 @@ const body = document.querySelector('body');
 const worksSection = document.querySelector('.works');
 const modal = document.querySelector('.modal-content');
 const overlay = document.querySelector('.overlay');
+const email = document.querySelector('[name="email"]');
+const emailError = document.querySelector('.error');
+const getIntouchForm = document.querySelector('.form');
 
 worksCardData.forEach((cardItem) => {
   worksSection.insertAdjacentHTML('afterbegin', cardBuilder(cardItem));
+});
+
+function displayError() {
+  if (email.validity.valueMissing) {
+    emailError.textContent = 'Email is required please';
+    email.setCustomValidity('');
+  } else if (email.validity.typeMismatch) {
+    emailError.textContent = 'Please provide a valid email';
+  } else if (email.validity.patternMismatch) {
+    emailError.textContent = 'Email should be in lowercase';
+  }
+  emailError.className = 'error error-active';
+}
+
+email.addEventListener('blur', () => {
+  if (email.validity.valid) {
+    emailError.textContent = '';
+    emailError.className = 'error';
+  } else {
+    displayError();
+  }
+});
+
+email.addEventListener('invalid', () => {
+  email.setCustomValidity(' ');
+});
+
+getIntouchForm.addEventListener('submit', (e) => {
+  if (!email.validity.valid) {
+    displayError();
+    e.preventDefault();
+  }
 });
 
 document.addEventListener('click', (e) => {
