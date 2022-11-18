@@ -20,16 +20,20 @@ worksCardData.forEach((cardItem) => {
 });
 
 function displayError() {
-  if(email.validity.valueMissing) {
+  if (email.validity.valueMissing) {
     emailError.textContent = 'Email is required please';
-  } else if(email.validity.patternMismatch) {
-    emailError.textContent = 'Email can only be in small letters';
+    email.setCustomValidity('')
+  } else if (email.validity.typeMismatch) {
+    emailError.textContent = 'Please provide a valid email'
+  }
+  else if (email.validity.patternMismatch) {
+    emailError.textContent = 'Email should be in lowercase';
   }
   emailError.className = 'error error-active';
 }
 
-email.addEventListener('input', (e) => {
-  if(email.validity.valid) {
+email.addEventListener('blur', (e) => {
+  if (email.validity.valid) {
     emailError.textContent = '';
     emailError.className = 'error';
   } else {
@@ -37,12 +41,16 @@ email.addEventListener('input', (e) => {
   }
 });
 
+email.addEventListener('invalid', (e) => {
+  email.setCustomValidity(' ')
+})
+
 getIntouchForm.addEventListener('submit', (e) => {
-    if(!email.validity.valid) {
-      displayError();
-      e.preventDefault();
-    }
-  })
+  if (!email.validity.valid) {
+    displayError();
+    e.preventDefault();
+  }
+})
 
 document.addEventListener('click', (e) => {
   const isNavIcon = e.target.matches('[data-nav-menu-icon]');
