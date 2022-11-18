@@ -96,14 +96,16 @@ getIntouchForm.addEventListener('submit', (e) => {
     userName: fullName.value,
     userEmail: email.value,
     userMessage: message.value,
-  }
+  };
 
   storeDataInBrowser('userData', userData);
 });
 
-let { userName,
-    userEmail,
-    userMessage } = getBrowserStoredData('userData');
-    fullName.value = userName;
-    email.value = userEmail;
-    message.value = userMessage;
+const { 
+  userName,
+  userEmail,
+  userMessage 
+} = getBrowserStoredData('userData');
+  fullName.value = userName;
+  email.value = userEmail;
+  message.value = userMessage;

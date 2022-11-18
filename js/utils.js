@@ -32,8 +32,6 @@ export const disableScrolling = () => {
 export const storeDataInBrowser = (dataKey, data) => {
   data = JSON.stringify(data);
   return	localStorage.setItem(dataKey, data);
-}
+};
 
-export const getBrowserStoredData = (dataKey) => {
-	return JSON.parse(window.localStorage.getItem(dataKey));
-}
+export const getBrowserStoredData = (dataKey) => JSON.parse(window.localStorage.getItem(dataKey));
