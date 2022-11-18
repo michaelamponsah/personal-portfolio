@@ -58,7 +58,12 @@ getIntouchForm.addEventListener('submit', (e) => {
 });
 
 // Set user data from local storage
-
+let { userName,
+    userEmail,
+    userMessage } = getBrowserStoredData('userData');
+    fullName.value = userName;
+    email.value = userEmail;
+    message.value = userMessage;
 
 document.addEventListener('click', (e) => {
   const isNavIcon = e.target.matches('[data-nav-menu-icon]');
