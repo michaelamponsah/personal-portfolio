@@ -7,9 +7,34 @@ const body = document.querySelector('body');
 const worksSection = document.querySelector('.works');
 const modal = document.querySelector('.modal-content');
 const overlay = document.querySelector('.overlay');
+const email = document.querySelector('[name="email"]');
+const emailError = document.querySelector('.error');
+const getIntouchForm = document.querySelector('.form');
+
+console.log(email.validity)
+
+
 
 worksCardData.forEach((cardItem) => {
   worksSection.insertAdjacentHTML('afterbegin', cardBuilder(cardItem));
+});
+
+function displayError() {
+  if(email.validity.valueMissing) {
+    emailError.textContent = 'Email is required please';
+  } else if(email.validity.patternMismatch) {
+    emailError.textContent = 'Email can only be in small letters';
+  }
+  emailError.className = 'error error-active';
+}
+
+email.addEventListener('input', (e) => {
+  if(email.validity.valid) {
+    emailError.textContent = '';
+    emailError.className = 'error';
+  } else {
+    displayError();
+  }
 });
 
 document.addEventListener('click', (e) => {
