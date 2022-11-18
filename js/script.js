@@ -37,6 +37,13 @@ email.addEventListener('input', (e) => {
   }
 });
 
+getIntouchForm.addEventListener('submit', (e) => {
+    if(!email.validity.valid) {
+      displayError();
+      e.preventDefault();
+    }
+  })
+
 document.addEventListener('click', (e) => {
   const isNavIcon = e.target.matches('[data-nav-menu-icon]');
   const isNavLink = e.target.matches('[data-nav-link]');
