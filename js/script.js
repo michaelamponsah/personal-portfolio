@@ -1,5 +1,5 @@
 import cardBuilder from './cardBuilder.js';
-import { disableScrolling, getCardData, setModalDisplayData } from './utils.js';
+import { disableScrolling, getBrowserStoredData, getCardData, setModalDisplayData, storeDataInBrowser } from './utils.js';
 import worksCardData from './worksCardData.js';
 
 const navMenu = document.querySelector('.mobile-navigation');
@@ -8,6 +8,8 @@ const worksSection = document.querySelector('.works');
 const modal = document.querySelector('.modal-content');
 const overlay = document.querySelector('.overlay');
 const email = document.querySelector('[name="email"]');
+const message = document.querySelector('[name="message"]');
+const fullName = document.querySelector('[name="name"]');
 const emailError = document.querySelector('.error');
 const getIntouchForm = document.querySelector('.form');
 
@@ -45,7 +47,23 @@ getIntouchForm.addEventListener('submit', (e) => {
     displayError();
     e.preventDefault();
   }
+
+  let userData = {
+    userName: fullName.value,
+    userEmail: email.value,
+    userMessage: message.value,
+  }
+
+  storeDataInBrowser('userData', userData);
 });
+
+// Set user data from local storage
+let { userName,
+  userEmail,
+  userMessage } = getBrowserStoredData('userData');
+  fullName.value = userName;
+  email.value = userEmail;
+  message.value = userMessage;
 
 document.addEventListener('click', (e) => {
   const isNavIcon = e.target.matches('[data-nav-menu-icon]');

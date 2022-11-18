@@ -29,11 +29,11 @@ export const disableScrolling = () => {
   document.body.style.overflow = 'hidden';
 };
 
-export const storeDataInBrowser = (data, dataKey) => {
-	json.stringify(data);
-	window.localStorage.setItem(data, dataKey);
+export const storeDataInBrowser = (dataKey, data) => {
+  data = JSON.stringify(data);
+  return	localStorage.setItem(dataKey, data);
 }
 
 export const getBrowserStoredData = (dataKey) => {
-	return window.localStorage.getItem(dataKey);
+	return JSON.parse(window.localStorage.getItem(dataKey));
 }
