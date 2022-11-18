@@ -57,7 +57,6 @@ getIntouchForm.addEventListener('submit', (e) => {
   storeDataInBrowser('userData', userData);
 });
 
-// Set user data from local storage
 let { userName,
     userEmail,
     userMessage } = getBrowserStoredData('userData');
