@@ -3,7 +3,7 @@ import {
   disableScrolling,
   getBrowserStoredData,
   getCardData, setModalDisplayData,
-  storeDataInBrowser
+  storeDataInBrowser,
 } from './utils.js';
 import worksCardData from './worksCardData.js';
 
@@ -106,7 +106,7 @@ getIntouchForm.addEventListener('submit', (e) => {
   storeDataInBrowser('userData', userData);
 });
 
-const { 
+const {
   userName,
   userEmail,
   userMessage,
