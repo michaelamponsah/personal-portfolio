@@ -1,5 +1,10 @@
 import cardBuilder from './cardBuilder.js';
-import { disableScrolling, getBrowserStoredData, getCardData, setModalDisplayData, storeDataInBrowser } from './utils.js';
+import {
+  disableScrolling,
+  getBrowserStoredData,
+  getCardData, setModalDisplayData,
+  storeDataInBrowser
+} from './utils.js';
 import worksCardData from './worksCardData.js';
 
 const navMenu = document.querySelector('.mobile-navigation');
@@ -92,7 +97,7 @@ getIntouchForm.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 
-  let userData = {
+  const userData = {
     userName: fullName.value,
     userEmail: email.value,
     userMessage: message.value,
@@ -104,8 +109,8 @@ getIntouchForm.addEventListener('submit', (e) => {
 const { 
   userName,
   userEmail,
-  userMessage 
+  userMessage,
 } = getBrowserStoredData('userData');
-  fullName.value = userName;
-  email.value = userEmail;
-  message.value = userMessage;
+fullName.value = userName;
+email.value = userEmail;
+message.value = userMessage;
