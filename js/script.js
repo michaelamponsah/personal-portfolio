@@ -21,8 +21,7 @@ function displayError() {
     email.setCustomValidity('');
   } else if (email.validity.typeMismatch) {
     emailError.textContent = 'Please provide a valid email';
-  }
-  else if (email.validity.patternMismatch) {
+  } else if (email.validity.patternMismatch) {
     emailError.textContent = 'Email should be in lowercase';
   }
   emailError.className = 'error error-active';
