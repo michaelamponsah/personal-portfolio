@@ -28,3 +28,10 @@ export const disableScrolling = () => {
   document.body.style.display = '100vh';
   document.body.style.overflow = 'hidden';
 };
+
+export const storeDataInBrowser = (dataKey, data) => {
+  data = JSON.stringify(data);
+  return localStorage.setItem(dataKey, data);
+};
+
+export const getBrowserStoredData = (dataKey) => JSON.parse(window.localStorage.getItem(dataKey));

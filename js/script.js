@@ -1,5 +1,10 @@
 import cardBuilder from './cardBuilder.js';
-import { disableScrolling, getCardData, setModalDisplayData } from './utils.js';
+import {
+  disableScrolling,
+  getBrowserStoredData,
+  getCardData, setModalDisplayData,
+  storeDataInBrowser,
+} from './utils.js';
 import worksCardData from './worksCardData.js';
 
 const navMenu = document.querySelector('.mobile-navigation');
@@ -8,43 +13,13 @@ const worksSection = document.querySelector('.works');
 const modal = document.querySelector('.modal-content');
 const overlay = document.querySelector('.overlay');
 const email = document.querySelector('[name="email"]');
+const message = document.querySelector('[name="message"]');
+const fullName = document.querySelector('[name="name"]');
 const emailError = document.querySelector('.error');
 const getIntouchForm = document.querySelector('.form');
 
 worksCardData.forEach((cardItem) => {
   worksSection.insertAdjacentHTML('afterbegin', cardBuilder(cardItem));
-});
-
-function displayError() {
-  if (email.validity.valueMissing) {
-    emailError.textContent = 'Email is required please';
-    email.setCustomValidity('');
-  } else if (email.validity.typeMismatch) {
-    emailError.textContent = 'Please provide a valid email';
-  } else if (email.validity.patternMismatch) {
-    emailError.textContent = 'Email should be in lowercase';
-  }
-  emailError.className = 'error error-active';
-}
-
-email.addEventListener('blur', () => {
-  if (email.validity.valid) {
-    emailError.textContent = '';
-    emailError.className = 'error';
-  } else {
-    displayError();
-  }
-});
-
-email.addEventListener('invalid', () => {
-  email.setCustomValidity(' ');
-});
-
-getIntouchForm.addEventListener('submit', (e) => {
-  if (!email.validity.valid) {
-    displayError();
-    e.preventDefault();
-  }
 });
 
 document.addEventListener('click', (e) => {
@@ -90,3 +65,74 @@ document.addEventListener('click', (e) => {
     body.style.overflow = 'auto';
   }
 });
+
+function displayError() {
+  if (email.validity.valueMissing) {
+    emailError.textContent = 'Email is required please';
+    email.setCustomValidity('');
+  } else if (email.validity.typeMismatch) {
+    emailError.textContent = 'Please provide a valid email';
+  } else if (email.validity.patternMismatch) {
+    emailError.textContent = 'Email should be in lowercase';
+  }
+  emailError.className = 'error error-active';
+}
+
+let userData = {
+  userName: '',
+  userEmail: '',
+  userMessage: '',
+};
+
+fullName.addEventListener('input', () => {
+  if (fullName.validity.valid) {
+    userData = {
+      ...userData,
+      userName: fullName.value,
+    };
+    storeDataInBrowser('userData', userData);
+  }
+});
+
+email.addEventListener('input', () => {
+  if (email.validity.valid) {
+    emailError.textContent = '';
+    emailError.className = 'error';
+    userData = {
+      ...userData,
+      userEmail: email.value,
+    };
+    storeDataInBrowser('userData', userData);
+  } else {
+    displayError();
+  }
+});
+
+message.addEventListener('input', () => {
+  if (message.validity.valid) {
+    userData = {
+      ...userData,
+      userMessage: message.value,
+    };
+    storeDataInBrowser('userData', userData);
+  }
+});
+
+email.addEventListener('invalid', () => {
+  email.setCustomValidity(' ');
+});
+
+getIntouchForm.addEventListener('submit', () => {
+  if (!email.validity.valid) {
+    displayError();
+  }
+});
+
+const {
+  userName,
+  userEmail,
+  userMessage,
+} = getBrowserStoredData('userData');
+fullName.value = userName;
+email.value = userEmail;
+message.value = userMessage;
